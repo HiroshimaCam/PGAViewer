@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "PGAViewer",
+  "version": "0.1.0",
+  "description": "揺れ検出システムのテスト用強震モニタ",
+  "permissions": [
+    "windows",
+    "storage",
+    "alarms",
+    "notifications",
+    "activeTab",
+    "scripting",
+    "offscreen",
+    "downloads"
+  ],
+  "host_permissions": [
+    "file:///*",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["placenames.json", "colors.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_title": "PGAViewer"
+  },
+  "background" : {
+    "service_worker" : "js/background.js"
+  },
+  "icons": {
+    "48": "images/base_map_w.png",
+    "128": "images/base_map_w.png"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PGAViewer</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div id="main">
+        <img id="map_img" src="../images/base_map_w.png" width="352" height="400">
+        <canvas id="nied_img" width="352" height="400"></canvas>
+        <img src="../images/nied_acmap_s_w_scale.gif" id="scaleimg">
+        <button id="opensetting">設定</button>
+        <div id="setting">
+            <p style='font-size: 18px;'>音声設定</p>
+            <p><input type="checkbox" id="sound_lv1">
+            <label for="sound_lv1">弱い揺れ検出時に音を鳴らす（非推奨）</label></p>
+            <p><input type="checkbox" id="sound_lv2" checked>
+            <label for="sound_lv2">中程度の揺れ検出時に音を鳴らす</label></p>
+            <p><input type="checkbox" id="sound_lv3" checked>
+            <label for="sound_lv3">強い揺れ検出時に音を鳴らす</label></p>
+            <p style='font-size: 18px;'>通知設定</p>
+            <p><input type="checkbox" id="notice_lv1">
+            <label for="notice_lv1">弱い揺れ検出時に通知する（非推奨）</label></p>
+            <p><input type="checkbox" id="notice_lv2" checked>
+            <label for="notice_lv2">中程度の揺れ検出時に通知する</label></p>
+            <p><input type="checkbox" id="notice_lv3" checked>
+            <label for="notice_lv3">強い揺れ検出時に通知する</label></p>
+            <button id="closesetting">閉じる</button>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
